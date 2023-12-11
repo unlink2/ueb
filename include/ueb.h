@@ -10,6 +10,12 @@ struct ueb_config {
   bool verbose;
 };
 
+struct ueb {
+  int tickc;
+};
+
+int ueb_tick(struct ueb *ueb);
+
 int ueb_main(struct ueb_config *cfg);
 
 #endif
